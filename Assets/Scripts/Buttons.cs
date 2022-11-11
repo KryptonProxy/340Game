@@ -5,10 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+
+    //Students who worked on this script:
+    //Carter Igo
+
     public void newGame()
     {
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("");
+    }
+
+    public void continueGame()
+    {
+
     }
 
     public void Exit()
@@ -18,5 +27,10 @@ public class Buttons : MonoBehaviour
 #else
             Application.Quit(); //does not work in the editor, it works when you compile
 #endif
+    }
+
+    public void credits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }
