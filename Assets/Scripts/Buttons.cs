@@ -8,6 +8,7 @@ public class Buttons : MonoBehaviour
 
     //Students who worked on this script:
     //Carter Igo
+    //Gary Stevens
 
     public void newGame()
     {
@@ -17,7 +18,8 @@ public class Buttons : MonoBehaviour
 
     public void continueGame()
     {
-
+        //string Level = PlayerPrefs.GetString("level", "nextlevel");
+        //ChangeLevel.SwitchLevel(level: Level);
     }
 
     public void Exit()
@@ -32,5 +34,10 @@ public class Buttons : MonoBehaviour
     public void credits()
     {
         SceneManager.LoadScene("Credits");
+    }
+
+    public void backToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
