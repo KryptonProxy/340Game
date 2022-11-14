@@ -40,4 +40,9 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void toTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
