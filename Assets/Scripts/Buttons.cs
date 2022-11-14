@@ -13,7 +13,7 @@ public class Buttons : MonoBehaviour
     public void newGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Level1");
     }
 
     public void continueGame()
