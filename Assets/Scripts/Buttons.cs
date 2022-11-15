@@ -13,7 +13,7 @@ public class Buttons : MonoBehaviour
     public void newGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level_1_Carter");
     }
 
     public void continueGame()
@@ -33,12 +33,12 @@ public class Buttons : MonoBehaviour
 
     public void credits()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Menu_Credits");
     }
 
     public void backToMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu_MainMenu");
     }
 
     public void toTutorial()
