@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 9e57f74f1c706434b8df2a6a74ca0016
+guid: e5fd83cd3afa2cc4d9a74558869fd711
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,7 +63,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -105,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire guy_0
+      name: Fire Guy Run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8211a64cd7c3a7b45b4ebe2feac3ba2c
-      internalID: 1969114970
+      spriteID: de4a76d40ae90864ea837b3d44bb0ad6
+      internalID: 1697914939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire guy_1
+      name: Fire Guy Run_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abc396b1a2618c549851922cf1514f75
-      internalID: -597062238
+      spriteID: 173e76dfbba50bd41a803d7aa0966847
+      internalID: 816020009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire guy_2
+      name: Fire Guy Run_2
       rect:
         serializedVersion: 2
         x: 0
@@ -161,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e7b27e2119fd47459fe76c6f0ce6f61
-      internalID: -2011552963
+      spriteID: 5bd673da92641fe4b98f916c2c463d9d
+      internalID: -1750493051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire guy_3
+      name: Fire Guy Run_3
       rect:
         serializedVersion: 2
         x: 32
@@ -182,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741274629966b4747b089901864564ba
-      internalID: 1265904545
+      spriteID: 6a512972c73168a46967be656304d4e6
+      internalID: 329893498
       vertices: []
       indices: 
       edges: []
@@ -199,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fire guy_0: 1969114970
-      Fire guy_1: -597062238
-      Fire guy_3: 1265904545
-      Fire guy_2: -2011552963
+      Fire Guy Run_0: 1697914939
+      Fire Guy Run_3: 329893498
+      Fire Guy Run_1: 816020009
+      Fire Guy Run_2: -1750493051
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
