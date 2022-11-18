@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4330854409151738959}
   - component: {fileID: 8290872498570097112}
   m_Layer: 0
-  m_Name: Foreground_6 1
+  m_Name: GreenPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 29835994, guid: ac6a13a815522c14fa22c16daeb8ac4c, type: 3}
+  m_Sprite: {fileID: -382910728, guid: ac6a13a815522c14fa22c16daeb8ac4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
