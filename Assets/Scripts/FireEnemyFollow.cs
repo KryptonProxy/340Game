@@ -7,6 +7,7 @@ public class FireEnemyFollow : MonoBehaviour
     //People who worked on his script:
     //Carter
 
+    //This is an emeny meant to chase the player once they get into a certain range
 
     public GameObject targetObject;
     public Transform targetTransform;
@@ -41,25 +42,34 @@ public class FireEnemyFollow : MonoBehaviour
         {
             targetPosition = targetObject.transform.position;
         }
-    }
-
-    private void FixedUpdate()
-    {
-        if(rb.velocity.magnitude > 0.01f)
+        Vector3 directionVector = targetPosition - transform.position;
+        float distanceToTarget = directionVector.magnitude;
+        directionVector.Normalize();
+        if (distanceToTarget > Range)
         {
-            anim.SetBool("RunTrue", true);
+            anim.SetBool("RunTrue", false);
+            return;
         }
         else
         {
-            anim.SetBool("RunTrue", false);
+            anim.SetBool("RunTrue", true);
         }
-        if (rb.velocity.x < 0)
+        transform.position += directionVector * speed * Time.deltaTime;
+        if (directionVector.x > 0)
         {
             sr.flipX = true;
         }
-        else if (rb.velocity.x > 0)
+        else if (directionVector.x < 0)
         {
             sr.flipX = false;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("Player")){
+            Destroy(gameObject);
+        }
+    }
+
 }
