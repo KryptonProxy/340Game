@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FireEnemyFollow : MonoBehaviour
 {
@@ -16,9 +17,11 @@ public class FireEnemyFollow : MonoBehaviour
     Animator anim;
     SpriteRenderer sr;
     Rigidbody2D rb;
+    GameObject other;
 
     public float Range = 2;
     public float speed = 2;
+    public int damage = -250;
 
     void Start()
     {
@@ -66,8 +69,14 @@ public class FireEnemyFollow : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if (collision.gameObject.CompareTag("Player")){
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            other = collision.gameObject;
+            bool isKilled = other.GetComponent<Health>().ChangeHealth(damage);
+            if (isKilled)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
             Destroy(gameObject);
         }
     }
