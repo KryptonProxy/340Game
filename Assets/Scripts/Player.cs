@@ -148,7 +148,7 @@ public class Player : MonoBehaviour
                 break;
             case "JumpPad":
                 rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0);//IN PROGRESS.
-                rigidBody.AddForce(Vector2.up * 1000);//Launches the player.
+                rigidBody.AddForce(Vector2.up * 500);//Launches the player.
                 break;
             default:
                 Debug.Log("Probably a tag is missing");
