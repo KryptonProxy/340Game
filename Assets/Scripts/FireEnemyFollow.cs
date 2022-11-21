@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FireEnemyFollow : MonoBehaviour
 {
-    //People who worked on his script:
+    //Students who worked on his script:
     //Carter
 
     //This is an emeny meant to chase the player once they get into a certain range
