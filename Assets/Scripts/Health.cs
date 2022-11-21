@@ -7,6 +7,10 @@ public class Health : MonoBehaviour
     public int currentHealth = 750;
 
     // Start is called before the first frame update
+    //Students who worked on his script:
+    //Chase Casto
+
+
     void Start()
     {
         

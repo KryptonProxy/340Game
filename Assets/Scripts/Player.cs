@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     //Students who worked on this script:
     //Gary Stevens
     //Chase Casto
+    //Carter Igo
 
     Rigidbody2D rigidBody;
     Animator animator;
@@ -34,7 +35,6 @@ public class Player : MonoBehaviour
         set
         {
             healthReference.currentHealth = value;
-            healthText.text = "Health: " + healthReference.currentHealth;
         }
     }
 
@@ -62,7 +62,9 @@ public class Player : MonoBehaviour
 
         isJumping = Input.GetAxis("Jump") > 0 ? true : false;
 
-        if(Input.GetAxis("Cancel") == 1)
+        healthText.text = "Health: " + healthReference.currentHealth;
+
+        if (Input.GetAxis("Cancel") == 1)
         {
             PlayerPrefs.SetFloat("PlayerX", respawnPoint.x);
             PlayerPrefs.SetFloat("PlayerY", respawnPoint.y);
