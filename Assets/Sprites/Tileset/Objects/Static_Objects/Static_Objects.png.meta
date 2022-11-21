@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1830,20 +1830,20 @@ TextureImporter:
       Static_Objects_3: 1653072138
       Static_Objects_21: -681679246
       Static_Objects_52: 1520397208
+      Static_Objects_14: -882774352
       Static_Objects_9: 522105196
-      Static_Objects_18: -986200319
       Static_Objects_0: -1292062131
       Static_Objects_5: -1216924065
       Static_Objects_76: 226518259
       Static_Objects_24: -1920465508
-      Static_Objects_14: -882774352
-      Static_Objects_28: 1576723028
-      Static_Objects_45: -598757327
       Static_Objects_58: 1577276632
+      Static_Objects_18: -986200319
+      Static_Objects_28: 1576723028
+      Static_Objects_63: 327331426
+      Static_Objects_45: -598757327
       Static_Objects_39: -436196059
       Static_Objects_48: 161119443
       Static_Objects_54: 1443078110
-      Static_Objects_63: 327331426
       Static_Objects_62: -621274733
       Static_Objects_40: 1246518144
       Static_Objects_44: -1314142957
