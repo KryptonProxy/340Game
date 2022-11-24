@@ -75,7 +75,7 @@ public class FireEnemyFollow : MonoBehaviour
             bool isKilled = other.GetComponent<Health>().ChangeHealth(damage);
             if (isKilled)
             {
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("Menu_MainMenu");
             }
             Destroy(gameObject);
         }
