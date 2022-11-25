@@ -18,6 +18,7 @@ public class FireEnemyFollow : MonoBehaviour
     SpriteRenderer sr;
     Rigidbody2D rb;
     GameObject other;
+    AudioSource soundEffect;
 
     public float Range = 2;
     public float speed = 2;
@@ -28,6 +29,7 @@ public class FireEnemyFollow : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        soundEffect = gameObject.GetComponent<AudioSource>();
         if (targetTransform == null)
         {
             targetTransform = GameObject.FindWithTag("Player").transform;
@@ -55,7 +57,8 @@ public class FireEnemyFollow : MonoBehaviour
         }
         else
         {
-            anim.SetBool("RunTrue", true);
+            soundEffect.Play();
+            anim.SetBool("RunTrue", true); 
         }
         transform.position += directionVector * speed * Time.deltaTime;
         if (directionVector.x > 0)
