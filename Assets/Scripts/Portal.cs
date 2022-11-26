@@ -5,9 +5,10 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     public string targetLevel;
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        ChangeLevel.SaveSettings("Level", paramValue: targetLevel);
         ChangeLevel.SwitchLevel(level: targetLevel);
     }
 }
