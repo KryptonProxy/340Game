@@ -43,6 +43,6 @@ public class Buttons : MonoBehaviour
 
     public void toTutorial()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Level_Tutorial");
     }
 }

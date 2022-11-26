@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
             Health = healthReference.currentHealth;//Sets health equal to the current health.
             if (isKilled)//If the player's health reaches 0, then they will be sent to the MainMenu.
             {
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("Menu_MainMenu");
             }
         }
 
