@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -3947,9 +3947,9 @@ TextureImporter:
       Terrain_2_143: 511348015
       Terrain_2_9: 1958311737
       Terrain_2_52: 1705718250
-      Terrain_2_146: 1525750079
-      Terrain_2_151: 451103394
       Terrain_2_174: -1260310371
+      Terrain_2_151: 451103394
+      Terrain_2_146: 1525750079
       Terrain_2_166: -1763139520
       Terrain_2_170: -1113092480
       Terrain_2_32: -275230821
@@ -4063,8 +4063,8 @@ TextureImporter:
       Terrain_2_48: 1046938131
       Terrain_2_91: -1653488347
       Terrain_2_41: 91284249
-      Terrain_2_147: 1593318468
       Terrain_2_165: -1170806554
+      Terrain_2_147: 1593318468
       Terrain_2_37: 739545567
       Terrain_2_49: -1455159961
       Terrain_2_132: 207796527
