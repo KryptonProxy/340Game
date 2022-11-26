@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Students who worked on this level
+//Carter Igo
+//Chase Casto
+
 public class ChangeLevel : MonoBehaviour
 {
     public string targetLevel;
