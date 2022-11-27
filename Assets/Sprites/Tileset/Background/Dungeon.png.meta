@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -829,12 +829,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dungeon_30: -718565432
-      Dungeon_22: -811588599
+      Dungeon_17: -267408514
+      Dungeon_18: 1000864066
       Dungeon_14: -5054437
       Dungeon_27: -592553985
       Dungeon_11: 1980858563
-      Dungeon_32: 565967701
       Dungeon_4: 1278990115
       Dungeon_31: 574252773
       Dungeon_2: 379177904
@@ -852,17 +851,18 @@ TextureImporter:
       Dungeon_21: 667591463
       Dungeon_33: -129538032
       Dungeon_20: 820370579
-      Dungeon_5: 1887590516
+      Dungeon_22: -811588599
+      Dungeon_32: 565967701
       Dungeon_6: 230996900
+      Dungeon_5: 1887590516
       Dungeon_24: 1340471994
-      Dungeon_7: 352787823
       Dungeon_0: 877881412
+      Dungeon_26: -1914184875
       Dungeon_19: 1166711360
       Dungeon_1: -692357919
-      Dungeon_26: -1914184875
-      Dungeon_18: 1000864066
+      Dungeon_7: 352787823
+      Dungeon_30: -718565432
       Dungeon_3: -832295964
-      Dungeon_17: -267408514
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -955,9 +955,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Terrain_15: 1179313664
-      Terrain_31: 1956052812
+      Terrain_11: -669319196
       Terrain_32: 1730761387
+      Terrain_6: -918610546
       Terrain_13: 1350841023
       Terrain_18: -546015212
       Terrain_28: -1995600547
@@ -992,9 +992,9 @@ TextureImporter:
       Terrain_20: -405415564
       Terrain_25: 1487935560
       Terrain_21: -2092686149
-      Terrain_11: -669319196
       Terrain_17: 1087656604
-      Terrain_6: -918610546
+      Terrain_31: 1956052812
+      Terrain_15: 1179313664
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

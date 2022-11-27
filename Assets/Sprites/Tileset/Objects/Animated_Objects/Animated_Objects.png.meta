@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -955,7 +955,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Animated_Objects_36: 499259259
+      Animated_Objects_21: 1495465932
       Animated_Objects_28: 548823575
       Animated_Objects_2: 2074108202
       Animated_Objects_24: 1805249542
@@ -991,10 +991,10 @@ TextureImporter:
       Animated_Objects_4: -1941817486
       Animated_Objects_17: -610040787
       Animated_Objects_19: 1641944594
-      Animated_Objects_1: 1200246872
-      Animated_Objects_21: 1495465932
-      Animated_Objects_37: 1531435013
       Animated_Objects_34: 1877011639
+      Animated_Objects_36: 499259259
+      Animated_Objects_37: 1531435013
+      Animated_Objects_1: 1200246872
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

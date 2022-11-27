@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -2159,10 +2159,10 @@ TextureImporter:
       Event_Block_92: -206533836
       Event_Block_8: 1519025203
       Event_Block_28: -1032124637
-      Event_Block_72: 975781681
-      Event_Block_49: -829603046
-      Event_Block_62: 1197881555
       Event_Block_84: -1576226490
+      Event_Block_49: -829603046
+      Event_Block_72: 975781681
+      Event_Block_62: 1197881555
       Event_Block_70: 1590456635
       Event_Block_17: 859757545
       Event_Block_76: 246317311
