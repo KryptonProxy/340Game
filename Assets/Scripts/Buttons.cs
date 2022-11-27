@@ -43,6 +43,7 @@ public class Buttons : MonoBehaviour
 
     public void toTutorial()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Level_Tutorial");
     }
 }
