@@ -29,7 +29,8 @@ public class Unstable_Platform : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         //if the object collides with player
-        if(collision.gameObject.Equals("Player"))
+       // if(collision.gameObject.Equals("Player"))
+       if (collision.gameObject.CompareTag("Player"))
         {
             //call the drop platform after half a second
             Invoke("DropPlatform", 0.5f);
