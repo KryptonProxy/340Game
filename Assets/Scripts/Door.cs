@@ -14,13 +14,6 @@ public class Door : MonoBehaviour
     //selector for the different key types
     [SerializeField] Key.KeyType key;
 
-
-    void Start()
-    {
-        //soundEffect = GetComponent<AudioSource>();
-        //clip = GetComponent<AudioClip>();
-    }
-
     //a method to get the key type
     public Key.KeyType GetKeyType()
     {
@@ -36,7 +29,6 @@ public class Door : MonoBehaviour
     private void DoorAnim()
     {
         //gameObject.SetActive(false);
-        
         
         Destroy(gameObject);
     }
