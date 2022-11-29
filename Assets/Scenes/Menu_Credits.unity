@@ -853,7 +853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 336.1, y: 478.39}
+  m_AnchoredPosition: {x: 207, y: 478.39}
   m_SizeDelta: {x: 361.78, y: 34.92}
   m_Pivot: {x: 1.150144, y: 10.333869}
 --- !u!114 &819125982
@@ -933,8 +933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230.66, y: -96}
-  m_SizeDelta: {x: 823.09, y: 150}
+  m_AnchoredPosition: {x: 262.75, y: -255.41}
+  m_SizeDelta: {x: 887.29, y: 468.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941842643
 MonoBehaviour:
@@ -969,7 +969,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: https://opengameart.org/content/platformer-game-music-pack
+  m_Text: 'https://opengameart.org/content/platformer-game-music-pack
+
+    https://pixabay.com/sound-effects/search/coin/
+
+    https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-lock-91
+
+    https://pixabay.com/sound-effects/search/boing/
+
+    https://www.dreamstime.com/royalty-free-sound-effect-checkpoint-save/
+
+    https://pixabay.com/sound-effects/search/health/
+
+    https://opengameart.org/content/platformer-game-music-pack
+
+    https://opengameart.org/content/heart-pixel-art
+
+'
 --- !u!222 &941842644
 CanvasRenderer:
   m_ObjectHideFlags: 0
