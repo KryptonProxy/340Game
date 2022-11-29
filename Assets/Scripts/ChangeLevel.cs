@@ -25,6 +25,7 @@ public class ChangeLevel : MonoBehaviour
 
         if (playerObject != null)
         {
+            PlayerPrefs.SetInt("Coins", playerObject.Coins);
             PlayerPrefs.SetInt("Health", playerObject.Health);
             PlayerPrefs.Save();
         }

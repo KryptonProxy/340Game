@@ -7,6 +7,7 @@ public class Key : MonoBehaviour
 
     //Students who worked on this script:
     //Gary Stevens
+    //Chase Casto
 
     //selector for the different key types
     [SerializeField] KeyType type;
@@ -15,7 +16,8 @@ public class Key : MonoBehaviour
     public enum KeyType
     {
         Fire,
-        Ice
+        Ice,
+        Gold
         //tried to make this as modular as possible so keys can be added
     }
 

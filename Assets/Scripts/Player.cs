@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
 
     Vector3 respawnPoint;
 
+    private int coins;
+    public Text coinText;
+
     [HideInInspector]
     public Text healthText;
     [HideInInspector]
@@ -38,6 +41,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    public int Coins
+    {
+        get { return coins; }
+        set
+        {
+            coins = value;
+        }
+    }
+
     public AudioSource soundSource;
     public ParticleSystem paricle1;
 
@@ -47,6 +59,8 @@ public class Player : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        Coins = PlayerPrefs.GetInt("Coins", 0);
 
         healthReference = GameObject.Find("Player").GetComponent<Health>();//Establishes a reference to the player's health.
         healthText = GameObject.Find("Health").GetComponent<Text>();//Finds the health text component.
@@ -63,6 +77,7 @@ public class Player : MonoBehaviour
         isJumping = Input.GetAxis("Jump") > 0 ? true : false;
 
         healthText.text = "Health: " + healthReference.currentHealth;
+        coinText.text = "Coins: " + coins;
 
         if (Input.GetAxis("Cancel") == 1)
         {
@@ -151,6 +166,10 @@ public class Player : MonoBehaviour
             case "JumpPad":
                 rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0);//IN PROGRESS.
                 rigidBody.AddForce(Vector2.up * 800);//Launches the player.
+                break;
+            case "Pickup":
+                Coins++;
+                Destroy(collision.gameObject);
                 break;
             default:
                 Debug.Log("Probably a tag is missing");
