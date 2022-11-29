@@ -3154,9 +3154,25 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f9b78e271397f741bcc34fb2527da8a, type: 3}
+    - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
       propertyPath: coinText
       value: 
       objectReference: {fileID: 595073216}
+    - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 00552e30f300aa14eb4b4bf672353f7e, type: 3}
+    - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: healthClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 29b2aafa4d3ca594ba6c3dd8ffeeee63, type: 3}
+    - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: checkpointClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a64fa338e8305e49b4e55b4a8dd3f4f, type: 3}
     - target: {fileID: 3028972369309726138, guid: 6ed360bed381c78479d099f57528368a, type: 3}
       propertyPath: m_RootOrder
       value: 5
