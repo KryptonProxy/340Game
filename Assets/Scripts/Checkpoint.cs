@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour
 {
+    //Students who worked on this script:
+    //Chase Casto
     Animator starCheckpoint;
 
     // Start is called before the first frame update

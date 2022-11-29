@@ -51,7 +51,10 @@ public class Player : MonoBehaviour
     }
 
     public AudioSource soundSource;
-    public ParticleSystem paricle1;
+    public AudioClip coinClip;
+    public AudioClip checkpointClip;
+    public AudioClip healthClip;
+    public AudioClip jumpClip;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +62,7 @@ public class Player : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        soundSource = GetComponent<AudioSource>();
         Coins = PlayerPrefs.GetInt("Coins", 0);
 
         healthReference = GameObject.Find("Player").GetComponent<Health>();//Establishes a reference to the player's health.
@@ -153,11 +156,13 @@ public class Player : MonoBehaviour
         {
             case "CheckPoint":
                 respawnPoint = collision.gameObject.transform.position;
+                soundSource.PlayOneShot(checkpointClip);
                 break;
             case "HealthBoost":
                 healthReference.ChangeHealth(250);//Increases the players Health by 250.
                 Health = healthReference.currentHealth;//Sets health equal to the current health.
                 Destroy(collision.gameObject);//Destroys the object.
+                soundSource.PlayOneShot(healthClip);
                 break;
             case "JumpBoost":
                 jumpPower = 1000;//Increases jump power.
@@ -166,10 +171,12 @@ public class Player : MonoBehaviour
             case "JumpPad":
                 rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0);//IN PROGRESS.
                 rigidBody.AddForce(Vector2.up * 800);//Launches the player.
+                soundSource.PlayOneShot(jumpClip);
                 break;
             case "Pickup":
                 Coins++;
                 Destroy(collision.gameObject);
+                soundSource.PlayOneShot(coinClip);
                 break;
             default:
                 Debug.Log("Probably a tag is missing");
