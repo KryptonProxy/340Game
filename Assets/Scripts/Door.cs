@@ -38,7 +38,7 @@ public class Door : MonoBehaviour
     {
         Invoke("PlaySound", 0.1f);
 
-        Invoke("DoorAnim", 1f); 
+        Invoke("DoorAnim", 2.1f); 
 
 
         //this will change as the door could have an animation 
