@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3617080385094171351}
   - component: {fileID: 4889607739690939089}
   m_Layer: 0
-  m_Name: BlinkyCoin
+  m_Name: Coin
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
