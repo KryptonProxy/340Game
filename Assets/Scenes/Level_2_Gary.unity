@@ -3170,6 +3170,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 29b2aafa4d3ca594ba6c3dd8ffeeee63, type: 3}
     - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: soundSource
+      value: 
+      objectReference: {fileID: 171535954}
+    - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
       propertyPath: checkpointClip
       value: 
       objectReference: {fileID: 8300000, guid: 9a64fa338e8305e49b4e55b4a8dd3f4f, type: 3}
