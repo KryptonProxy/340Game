@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     //Students who worked on his script:
     //Chase Casto
+    //Gary Stevens
 
 
     void Start()
@@ -29,6 +31,8 @@ public class Health : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        //Causes a null exception on follow script upon death
+        //Destroy(gameObject);
+        SceneManager.LoadScene("Menu_MainMenu");
     }
 }

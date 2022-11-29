@@ -8,17 +8,17 @@ public class Door : MonoBehaviour
     //Students who worked on this script:
     //Gary Stevens
 
-    public AudioSource soundEffect;
-    public AudioClip clip;
+    [SerializeField] AudioSource soundEffect;
+    [SerializeField] AudioClip clip;
 
     //selector for the different key types
     [SerializeField] Key.KeyType key;
 
 
-    void Awake()
+    void Start()
     {
-        soundEffect = GetComponent<AudioSource>();
-        clip = GetComponent<AudioClip>();
+        //soundEffect = GetComponent<AudioSource>();
+        //clip = GetComponent<AudioClip>();
     }
 
     //a method to get the key type
@@ -28,12 +28,27 @@ public class Door : MonoBehaviour
         return key;
     }
 
+    private void PlaySound()
+    {
+        soundEffect.PlayOneShot(clip);
+    }
+
+    private void DoorAnim()
+    {
+        //gameObject.SetActive(false);
+        
+        
+        Destroy(gameObject);
+    }
+
     //method to open the door
     public void OpenDoor()
     {
-        soundEffect.PlayOneShot(clip);
+        Invoke("PlaySound", 0.1f);
 
-        gameObject.SetActive(false);
+        Invoke("DoorAnim", 1f); 
+
+
         //this will change as the door could have an animation 
     }
 }
