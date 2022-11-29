@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4778190448672886674, guid: b5d53704d364a6d46902303786bc755e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.29
+      value: 12.9
       objectReference: {fileID: 0}
     - target: {fileID: 4778190448672886674, guid: b5d53704d364a6d46902303786bc755e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 240177956}
-  lerpPerFrame: 0.01
+  lerpPerFrame: 1
   lockYAxis: 0
 --- !u!1001 &315747095
 PrefabInstance:
@@ -1123,7 +1123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6751343684320697413, guid: 5164f1169eb42a04ba6b5d250255b446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.76
+      value: 11.48
       objectReference: {fileID: 0}
     - target: {fileID: 6751343684320697413, guid: 5164f1169eb42a04ba6b5d250255b446, type: 3}
       propertyPath: m_LocalPosition.z
