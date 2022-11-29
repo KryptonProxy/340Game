@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
 
         healthReference = GameObject.Find("Player").GetComponent<Health>();//Establishes a reference to the player's health.
         healthText = GameObject.Find("Health").GetComponent<Text>();//Finds the health text component.
+        coinText = GameObject.Find("CoinText").GetComponent<Text>();
         Health = PlayerPrefs.GetInt("Health", healthReference.currentHealth);//Allows us to carry the Health component to other levels.
 
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerX", -7), PlayerPrefs.GetFloat("PlayerY", 0), 0);
@@ -175,8 +176,8 @@ public class Player : MonoBehaviour
                 break;
             case "Pickup":
                 Coins++;
-                Destroy(collision.gameObject);
                 soundSource.PlayOneShot(coinClip);
+                Destroy(collision.gameObject);
                 break;
             default:
                 Debug.Log("Probably a tag is missing");
