@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,9 +16,11 @@ public class Player : MonoBehaviour
     Rigidbody2D rigidBody;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    ParticleSystem particleSystem;
 
     public float speed = 10;
     public float jumpPower = 10;
+    public int counter;
     float horizontalMovement;
 
     bool isJumping = false;
@@ -63,6 +66,7 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         soundSource = GetComponent<AudioSource>();
+        particleSystem = GetComponent<ParticleSystem>();
         Coins = PlayerPrefs.GetInt("Coins", 0);
 
         healthReference = GameObject.Find("Player").GetComponent<Health>();//Establishes a reference to the player's health.
@@ -173,6 +177,13 @@ public class Player : MonoBehaviour
                 rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0);//IN PROGRESS.
                 rigidBody.AddForce(Vector2.up * 800);//Launches the player.
                 soundSource.PlayOneShot(jumpClip);
+                counter = 5;
+                particleSystem.Play();
+                while(counter != 0)
+                {
+                    counter--;
+                }
+                particleSystem.Stop();
                 break;
             case "Pickup":
                 Coins++;
