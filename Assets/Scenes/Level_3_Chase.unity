@@ -894,6 +894,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1805957487444241855, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805957487444241855, guid: 6ed360bed381c78479d099f57528368a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1593899223
+      objectReference: {fileID: 0}
     - target: {fileID: 2665073904877670212, guid: 6ed360bed381c78479d099f57528368a, type: 3}
       propertyPath: coinText
       value: 
