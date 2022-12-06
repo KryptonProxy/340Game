@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu_Credits.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Menu_MainMenu.unity
     guid: a558981dff4080f4dbe5e270532d9fc0
   - enabled: 1
@@ -18,12 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_2_Gary.unity
     guid: 01481c03dba7d694a9c1d3687003ab54
   - enabled: 1
-    path: Assets/Scenes/Level_3_Chase.unity
-    guid: fbec133c451fc9042a5b2bfaca2ed6ae
-  - enabled: 1
     path: Assets/Scenes/Level_4_Cameron.unity
     guid: 270de2bbed4a2a34fa99a37d6575ed56
   - enabled: 1
     path: Assets/Scenes/Level_Tutorial.unity
     guid: 5f37870eb9235894c96857378e8d689f
+  - enabled: 1
+    path: Assets/Scenes/Level_Credits.unity
+    guid: 94685be426c253d459b22b40aca6b859
   m_configObjects: {}

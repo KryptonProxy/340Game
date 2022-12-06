@@ -33,7 +33,7 @@ public class Buttons : MonoBehaviour
 
     public void credits()
     {
-        SceneManager.LoadScene("Menu_Credits");
+        SceneManager.LoadScene("Level_Credits");
     }
 
     public void backToMenu()
